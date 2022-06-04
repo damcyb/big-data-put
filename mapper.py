@@ -7,7 +7,7 @@ CATEGORY_COL = 3
 for line in sys.stdin:
     values = line.split("\t")
     title = values[TITLE_COL]
-    actor = values[ACTOR_COL]
+    actor = 1
     category = values[CATEGORY_COL]
     if category in ["actor", "actress", "self"]:
         print(f"{title}\t{actor}")
